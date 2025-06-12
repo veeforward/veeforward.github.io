@@ -217,7 +217,7 @@ section#about {
   --color-accent: #ffd700;
 }
 section#work {
-  background-color: #87ceeb;
+  background-color: #7bc0dbbd;
   color: #0c0c0c;
   --color-accent: #2e8b57;
 }
@@ -340,7 +340,7 @@ section#footer {
 .role {
   font-size: 1.25rem;
   font-weight: bold;
-  color: white;
+  color: rgb(7, 7, 7);
 }
 
 .period {
@@ -349,12 +349,12 @@ section#footer {
 
 .company {
   font-size: 1.125rem;
-  color: #60a5fa;
+  color: #0f468a;
   margin-top: 0.5rem;
 }
 
 .description {
-  color: #d4d4d8;
+  color: #2f2f33;
   margin: 0.5rem 0;
 }
 
@@ -367,12 +367,12 @@ section#footer {
 .achievements li {
   display: flex;
   align-items: flex-start;
-  color: #a1a1aa;
+  color: #5a5a77;
   margin-bottom: 0.5rem;
 }
 
 .dot {
-  color: #60a5fa;
+  color: #466ea0;
   margin-right: 0.5rem;
 }
 
@@ -381,7 +381,7 @@ section#footer {
   font-weight: bold;
   text-align: left;
   margin-bottom: 4rem;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 
