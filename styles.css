@@ -280,6 +280,111 @@ section#footer {
 }
 
 /* work section */
+.work-section {
+  padding: 6rem 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.work-list {
+  border-left: 2px solid #3f3f46;
+}
+
+.work-item {
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  position: relative;
+  border-left: 2px solid #3f3f46;
+}
+
+.work-item.no-border {
+  border-left: 2px solid transparent;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #3f3f46;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.work-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .work-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.role {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.period {
+  color: #a1a1aa;
+}
+
+.company {
+  font-size: 1.125rem;
+  color: #60a5fa;
+  margin-top: 0.5rem;
+}
+
+.description {
+  color: #d4d4d8;
+  margin: 0.5rem 0;
+}
+
+.achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.achievements li {
+  display: flex;
+  align-items: flex-start;
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+}
+
+.dot {
+  color: #60a5fa;
+  margin-right: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+
 .work_logos {
   margin-top: var(--space-xl);
 }
