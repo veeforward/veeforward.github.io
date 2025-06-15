@@ -2979,7 +2979,13 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 4.5em 0 2.5em 0 ;
+		padding: 4em 2.5em 0 2.5em; ;
+		background-color: #ffffff;
+		border-bottom: solid 2px #eeeeee;
+	}
+
+	.wrapper-work {
+		padding: 3.5em 5em 2.5em 5em; ;
 		background-color: #ffffff;
 		border-bottom: solid 2px #eeeeee;
 	}
@@ -4139,7 +4145,7 @@ input, select, textarea {
 	#footer {
 		background-color: #f7f7f7;
 		color: #999999;
-		padding: 4.5em 0 2.5em 0 ;
+		padding: 2.5em 0 2em 0 ;
 		color: #b0b0b0;
 		text-align: center;
 	}
@@ -4209,3 +4215,229 @@ input, select, textarea {
 		}
 
 	}
+
+.certificates-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.certificates-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.certificate-image {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@media (min-width: 769px) {
+    .certificates-carousel {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        overflow: visible;
+        justify-content: center;
+    }
+
+    .certificates-wrapper {
+        display: flex;
+        transform: none;
+    }
+
+    .certificate-image {
+        min-width: auto;
+        max-width: auto;
+    }
+
+    .carousel-btn {
+        display: none;
+    }
+
+    /* Certificate images */
+    #badge-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px 32px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+
+    #cert-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px 12px;
+        width: 50%;
+        max-width: 50%;
+        margin: 0 auto;
+        padding: 0 4px;
+        box-sizing: border-box;
+    }
+     #cert-wrapper .certificate-image {
+        flex: 1 1 calc(50% - 32px);
+        /* 2 per row */
+
+        min-width: auto;
+        height: 400px;
+        object-fit: contain;
+        margin: 0;
+        display: block;
+        border-radius: 8px;
+        background: #ffffff00;
+    }
+
+
+    #badge-wrapper .certificate-image {
+        flex: 1 1 calc(50% - 32px);
+        /* 2 per row */
+
+        min-width: auto;
+        height: 340px;
+        object-fit: contain;
+        margin: 0;
+        display: block;
+        border-radius: 8px;
+        background: #ffffff00;
+    }
+}
+
+/* work section */
+.work-section {
+  padding: 6rem 6rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #999999;
+}
+
+.work-list {
+  border-left: 2px solid #57575f;
+}
+
+.work-item {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  border-left: 2px solid #5c5c66;
+}
+
+.work-item.no-border {
+  border-left: 2px solid transparent;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #4d4d53;
+  border: 2px solid rgba(83, 79, 79, 0.747);
+  border-radius: 50%;
+  
+}
+
+.work-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .work-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.role {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgba(7, 7, 7, 0.719);
+  margin-bottom: 0.2rem;
+}
+
+.period {
+  color: #737377;
+}
+
+.company {
+  font-size: 1.15rem;
+  color: #255794dc;
+  margin-top: 0.1rem;
+  margin-bottom: 0.6rem;
+  text-align: left;
+}	
+
+.description {
+  color: #2f2f33b2;
+  margin-top: 0.6rem;
+  margin-bottom: 0.1rem;
+  text-align: left;
+  font-size: 1.10rem;
+}
+
+.achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  font-size: .95rem;
+}
+
+.achievements li {
+  display: flex;
+  align-items: flex-start;
+  color: #78789cf3;
+  margin-bottom: 0.5rem;
+}
+
+.dot {
+  color: #466ea0;
+  margin-right: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 4rem;
+  color: rgb(0, 0, 0);
+}
+
+
+.work_logos {
+  margin-top: var(--space-xl);
+}
+.work_logos img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: var(--space-3xs);
+}
